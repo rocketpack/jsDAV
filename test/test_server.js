@@ -12,6 +12,8 @@ var jsDAV = require("./../lib/jsdav"),
 
 jsDAV.debugMode = true;
 
+console.log("dir="+__dirname);
+
 jsDAV.createServer({
     node: __dirname + "/assets",
     locksBackend: new jsDAV_Locks_Backend_FS(__dirname + "/assets")
